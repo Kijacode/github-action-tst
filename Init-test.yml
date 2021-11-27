@@ -1,0 +1,20 @@
+name: "Danford Kija"
+age: 12
+key:
+   key: value
+   key2: data2
+array:
+     - item1
+     - item2
+     - {key: value}
+jsonArray: [item1 , item2]
+objectsArray:
+           - key: value
+           - key2: value2
+           - key3: value3
+           - key4: value4
+longText: >
+           dklfjaf adlkfjaldkf djflafjald jflajfdlf
+           lfdjflakd fjladjf al lkdjflakf 
+
+ 

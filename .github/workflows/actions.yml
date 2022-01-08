@@ -8,6 +8,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps: 
+           - name: List Files
+             run: |
+                pwd
+                ls
            - name: Simple JS Action
              id: greet
              uses: Kijacode/hello-world-javascript-action@main

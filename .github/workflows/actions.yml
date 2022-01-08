@@ -8,6 +8,14 @@ jobs:
         runs-on: ubuntu-latest
 
         steps: 
+           - name: Secret key varibale to use
+             run: |
+                 pwd
+                 ls -a
+                 echo $GITHUB_SHA
+                 echo $GITHUB_REPOSITORY
+                 echo $GGITHUB_WORKSPACE
+                 echo "{{github}}"
            - name: Checkout
              uses: actions/checkout@v1
            - name: List Files

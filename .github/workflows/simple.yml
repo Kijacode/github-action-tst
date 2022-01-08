@@ -7,7 +7,7 @@
         runs-on: ubuntu-latest
         steps:
           - name: echo a string
-            run: ecpo "Helo World"
+            run: echo "Helo World"
           - name: multiline script
             run: |
                node -v

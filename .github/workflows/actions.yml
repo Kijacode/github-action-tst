@@ -16,6 +16,8 @@ jobs:
                  echo $GITHUB_REPOSITORY
                  echo $GGITHUB_WORKSPACE
                  echo "{{github}}"
+                 ls -a 
+                 pwd
            - name: Checkout
              uses: actions/checkout@v1
            - name: List Files

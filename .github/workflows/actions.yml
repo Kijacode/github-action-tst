@@ -1,8 +1,22 @@
 name: Actions WorkFlow
 
 
-on: [push,pull_request  ]
-
+on: 
+   push:
+     branches:
+       - master
+       - 'feature/*' #matches feature/featA, feature/featB doen't match feature/feat/a
+       - 'feature/**' #matches feature/feat/a or feature/featB
+       - '!feature/featC'
+     tags:
+        - 'v1.*'
+     paths:
+        - '**.js' # this workflow will run if we push anything in js files , if we push and change non.js files this workflow will not run
+        # ignore .js file by add '!filename.js'
+   #  path-ignore:
+      #    - '!docs/**'
+ #  branches-ignore:
+      #    - null
 jobs:
       run-github-actions:
         runs-on: ubuntu-latest

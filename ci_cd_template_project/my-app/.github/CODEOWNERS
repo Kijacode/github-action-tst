@@ -1,0 +1,4 @@
+* @Kijacode
+*.js @Kijacode
+*.yml @Kijacode
+/test/* @Kijacode
